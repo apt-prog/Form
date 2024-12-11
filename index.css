@@ -1,0 +1,139 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.25);
+}
+
+.btn {
+    width: 48%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(76, 175, 80, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 0 4px 6px rgba(244, 67, 54, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 6px 8px rgba(244, 67, 54, 0.5);
+    transform: translateY(-2px);
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
